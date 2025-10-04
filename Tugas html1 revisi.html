@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh HTML Lengkap</title>
+    <style>
+        table, th, td {
+            border: 2px solid red;   
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tabel 1 -->
+    <h2>Tabel Sederhana</h2>
+    <table>
+        <tr>
+            <th>Header kolom 1</th>
+            <th>Header kolom 2</th>
+        </tr>
+        <tr>
+            <td>Data baris 1 kolom 1</td>
+            <td>Data baris 1 kolom 2</td>
+        </tr>
+        <tr>
+            <td>Data baris 2 kolom 1</td>
+            <td>Data baris 2 kolom 2</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!--Tabel 2 dengan border merah -->
+    <h2>Tabel dengan Border Merah</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Alamat</th>
+            <th>Nama</th>
+            <th>Telepon</th>
+        </tr>
+        <tr>
+            <th colspan="2">Keterangan Kontak</th>
+        </tr>
+        <tr>
+            <td>Jl. Sunan Kudus No.50</td>
+            <td>Zahra</td>
+            <td>089673169299</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Form -->
+    <h2>Form Input Data</h2>
+    <form action="/submit-data.php" method="post">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="komentar">Komentar:</label><br>
+        <textarea id="komentar" name="komentar" rows="4" cols="50"></textarea><br><br>
+
+        <input type="radio" id="opsi1" name="opsi" value="opsi 1">
+        <label for="opsi1">Opsi 1</label><br>
+
+        <input type="radio" id="opsi2" name="opsi" value="opsi 2">
+        <label for="opsi2">Opsi 2</label><br><br>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+
+    <br>
+<!--List  -->
+<h2>Bahan Utama</h2>
+<ul>
+    <li>Jahe</li>
+    <li>Kencur</li>
+    <li>Kunyit</li>
+</ul>
+
+<h2>Bahan Tambahan</h2>
+<ul>
+    <li>Serai</li>
+    <li>Gula merah</li>
+    <li>Air secukupnya</li>
+</ul>
+
+<h2>Langkah-langkah Membuat</h2>
+<ol>
+    <li>Cuci bersih jahe, kencur, kunyit, dan serai.</li>
+    <li>Potong kecil-kecil agar mudah direbus.</li>
+    <li>Masukkan bahan utama ke dalam panci berisi air.</li>
+    <li>Rebus hingga mendidih sekitar 15 menit.</li>
+    <li>Tambahkan gula merah, aduk hingga larut.</li>
+    <li>Sajikan jamu hangat dalam gelas.</li>
+</ol>
+
+    <br>
+
+    <!-- Gambar -->
+    <h2>Contoh Gambar</h2>
+    <img src="https://wallpapers.com/images/hd/upin-ipin-900-x-900-background-xid2xskv3q1omi98.jpg" 
+         alt="Gambar Upin Ipin" width="600" height="335">
+
+</body>
+</html>
